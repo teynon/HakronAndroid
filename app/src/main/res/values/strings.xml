@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActivityExample</string>
+    <string name="resource_string">Resource String</string>
+    <string name="btn_linear_example">Linear Example</string>
+    <string name="btn_relative_example">Relative Example</string>
+    <string name="title_activity_camera_example">CameraExample</string>
+    <string name="btn_set_picture">Set Picture</string>
+    <string name="btn_camera_example">Camera Example</string>
+</resources>

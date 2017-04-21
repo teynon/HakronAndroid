@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="software.eynon.activityexample.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/hello_world"/>
+
+    <!---->
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hello_world"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_linear_example"
+        android:id="@+id/linear_button"
+        android:onClick="openLinearExample" />
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_button"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_relative_example"
+        android:id="@+id/relative_button"
+        android:onClick="openRelativeExample"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/relative_button"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_camera_example"
+        android:id="@+id/camera_button"
+        android:onClick="openCameraExample"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+        <!---->
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="Child A"
+        android:id="@+id/childA"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/childA"
+        android:text="Button A"
+        android:id="@+id/buttonA"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/childA"
+        android:layout_toRightOf="@id/buttonA"
+        android:layout_marginLeft="10dp"
+        android:text="Button B"
+        android:id="@+id/buttonB" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/childA"
+        android:layout_toRightOf="@id/buttonB"
+        android:layout_marginLeft="10dp"
+        android:text="Button C"
+        android:id="@+id/buttonC" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/childA"
+        android:layout_toRightOf="@id/buttonC"
+        android:layout_marginLeft="10dp"
+        android:text="Button D"
+        android:id="@+id/buttonD" />
+
+</RelativeLayout>
